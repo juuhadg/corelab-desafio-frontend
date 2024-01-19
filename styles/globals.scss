@@ -1,0 +1,20 @@
+@import '../styles/variaveis.scss';
+
+*{
+  font-size: 14px;
+  font-family: 'artico';
+}
+
+html,body,#__next {
+  height: 100%;
+  margin: 0;
+  background-color: $corDoFundoCinza;
+}
+
+@import '../components/Cabecalho/Cabecalho.scss';
+
+
+@font-face {
+  font-family: 'artico';
+  src: url('../public/fonts/artico.otf');
+}
