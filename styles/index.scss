@@ -1,0 +1,28 @@
+.subtitulo{
+    text-align: center;
+    color: $cinza;
+    font-size: 16px;
+}
+
+.tarefasContainer,.favoritasContainer{
+    margin: 0 auto;
+
+}
+
+.tarefasContainer{
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: $desktopBreakpoint) {
+
+    .tarefasContainer,.favoritasContainer{
+        width: 80%;
+        margin: 0 auto;
+        >div{
+            display: flex;
+
+        }
+    }
+}
+
+

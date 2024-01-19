@@ -1,0 +1,80 @@
+.tarefaContainer {
+    margin:  0 auto;
+    background-color: $branco;
+    width: 70%;
+    border-radius: 20px;
+    height: 300px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 3px $cinzaClaro;
+
+    img{
+        cursor: pointer;
+    }
+    
+
+    .titulo {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5px;
+        align-items: center;
+        border-bottom: 1px solid $cinzaClaro;
+    }
+
+    .conteudo{
+        height: 80%;
+        overflow: auto;
+        
+    }
+
+    .rodape{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: space-between;
+        padding: 0px 10px;
+
+        section  {
+            display: flex;
+            
+        }
+
+        div{
+            background-color: transparent;
+            border-radius: 100%;
+            width: fit-content;
+            height: auto;
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            
+            
+        }
+    }
+
+}
+
+@media screen and (min-width: $desktopBreakpoint) {
+
+    .tarefaContainer{
+        width: 30%;
+        height: 500px;
+        margin: none;   
+
+        .conteudo{
+            height: 85%;
+        }
+
+        .rodape {
+            div{
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+    }
+
+}
