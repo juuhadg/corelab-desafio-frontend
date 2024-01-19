@@ -4,37 +4,39 @@ import estrelaVazia from '../../public/imagens/estrelaVazia.png'
 import balde from '../../public/imagens/balde.svg'
 import lapis from '../../public/imagens/lapis.svg'
 import x from '../../public/imagens/x.svg'
+import { obterCor } from "@/functions/obterCor";
 
-const favorito = true
-function obterFavorito() {
-    return favorito ? estrelaColorida : estrelaVazia
-}
 
-export function Tarefa() {
+export function Tarefa({titulo,conteudo,favorito,cor}) {
+
+    function obterFavorito() {
+        return favorito ? estrelaColorida : estrelaVazia
+    }
+
     return(
         <>
-        <div className="tarefaContainer">
+        <div className="tarefaContainer" style={{ backgroundColor: obterCor(cor) }}>
             <div className="titulo">
-                <h1>Titulo</h1>
-                <Image src={obterFavorito()} width={25}/>
+                <h1>{titulo}</h1>
+                <Image src={obterFavorito()} width={25} alt="icone estrela"/>
             </div>
 
             <div className="conteudo">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <p>{conteudo}</p>
             </div>
 
             <div className="rodape">
 
             <section>
                 
-                <div> <Image src={lapis} width={15}/> </div>
+                <div> <Image src={lapis} width={15} alt="icone lapis"/> </div>
                 
                 
-                <div> <Image src={balde} width={17}/> </div>
+                <div> <Image src={balde} width={17} alt="icone balde de tinta"/> </div>
                
             </section>
 
-            <Image src={x} width={13}/>
+            <Image src={x} width={13} alt="x de fechar"/>
 
             </div>
 

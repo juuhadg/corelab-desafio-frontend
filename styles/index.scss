@@ -6,7 +6,7 @@
 
 .tarefasContainer,.favoritasContainer{
     margin: 0 auto;
-
+   
 }
 
 .tarefasContainer{
@@ -18,9 +18,11 @@
     .tarefasContainer,.favoritasContainer{
         width: 80%;
         margin: 0 auto;
+        
         >div{
             display: flex;
-
+            flex-wrap: wrap;
+            justify-content: flex-start !important;
         }
     }
 }
