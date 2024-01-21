@@ -1,0 +1,63 @@
+.criarTarefaContainer {
+    margin:  0 auto;
+    background-color: $branco;
+    width: 70%;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 5px 10px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 3px $cinzaClaro;
+
+  
+    
+
+    .titulo {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 5px;
+        align-items: center;
+        border-bottom: 1px solid $cinzaClaro;
+        margin-bottom: 10px;
+    }
+
+    button {
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    
+    input {
+        border: none;
+        font-size: 16px;
+        padding: 10px;
+        width: 80%;
+        outline: none;
+    }
+    textarea{
+        resize: none;
+        outline: none;
+        width: 100%;
+        border: none;
+        
+    }
+
+}
+
+@media screen and (min-width: $desktopBreakpoint) {
+
+    .criarTarefaContainer{
+        width: 40%;
+        height: auto;
+        margin-top: 20px !important;   
+        margin: 0 auto;
+        border-radius: 0;
+     
+
+        .conteudo{
+            height: 85%;
+        }
+
+
+    }
+
+}

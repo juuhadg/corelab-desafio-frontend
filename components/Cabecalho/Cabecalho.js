@@ -2,7 +2,9 @@ import Image from "next/image";
 import logo from '../../public/imagens/logo.png'
 import lupa from '../../public/imagens/lupa.png'
 
-export function Cabecalho() {
+export function Cabecalho({pesquisarTarefas}) {
+
+
     return (
         <>
         <div className="cabecalhoContainer">
@@ -13,7 +15,7 @@ export function Cabecalho() {
             </div>
 
             <div className="inputContainer">
-            <input type="text" placeholder="Pesquisar notas"/>
+            <input type="text" placeholder="Pesquisar notas" onChange={pesquisarTarefas}/>
             <Image src={lupa} width={20} className="lupa" alt="icone lupa"/>
             </div>
 

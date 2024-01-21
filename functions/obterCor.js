@@ -12,7 +12,7 @@ export function obterCor(cor) {
         case 'rosa': codigo = '#eca1ff'
         break;
 
-        case 'aqua': codigo = '#eca1ff'
+        case 'aqua': codigo = '#b9ffdd'
         break;
 
         case 'verde': codigo = '#daff8b'

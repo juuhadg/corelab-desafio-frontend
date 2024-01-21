@@ -1,12 +1,11 @@
-import ProblemaService from "@/services/TarefaService";
-
+import TarefaService from "@/services/TarefaService";
 
 export async function obterTarefas() {
     try {
         
-        const problemaService = new ProblemaService()
+        const tarefaService = new TarefaService()
     
-        const listaDeTarefas = await problemaService.obterTarefas()
+        const listaDeTarefas = await tarefaService.obterTarefas()
         
     
         return listaDeTarefas.data

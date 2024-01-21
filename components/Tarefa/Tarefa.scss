@@ -11,6 +11,13 @@
     img{
         cursor: pointer;
     }
+
+    input {
+        border: none;
+        outline: none;
+        width: 90%;
+       
+    }
     
 
     .titulo {
@@ -19,6 +26,7 @@
         padding: 0px 5px;
         align-items: center;
         border-bottom: 1px solid $cinzaClaro;
+        min-height: 36.75px;
     }
 
     .conteudo{
@@ -40,14 +48,13 @@
         }
 
         div{
-            background-color: transparent;
             border-radius: 100%;
             width: fit-content;
             height: auto;
             display: flex;
             align-items: center;
-            padding: 3px;
-            
+            padding: 5px;
+
             
         }
     }

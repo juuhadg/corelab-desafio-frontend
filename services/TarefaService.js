@@ -1,6 +1,6 @@
 import HttpRequest from "./HttpRequest";
 
-export default class ProblemaService extends HttpRequest{
+export default class TarefaService extends HttpRequest{
     
     async adicionarTarefa(dados) {
         return this.post('/tarefas', dados)
@@ -10,8 +10,8 @@ export default class ProblemaService extends HttpRequest{
         return this.get('/tarefas')
     }
 
-    async editarTarefa(dados) {
-        return this.put('/tarefas', dados)
+    async editarTarefa(id,dados) {
+        return this.put(`/tarefas?id=${id}`, dados)
     }
 
     async deletarTarefa(id) {
