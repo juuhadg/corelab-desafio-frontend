@@ -18,12 +18,7 @@ async function carregarTarefas() {
 }
 
   useEffect(()=>{
-  
-
     carregarTarefas()
-
-    console.log(listaDeTarefas)
-
   },[])
 
   function pesquisarTarefas(e) {
@@ -33,7 +28,6 @@ async function carregarTarefas() {
   function trocarDeCategoria(id) {
     let copiaDasTarefas = [...tarefasFiltradas]
       const tarefaATrocar = copiaDasTarefas.find(tarefa=> tarefa._id == id)
-      console.log(tarefaATrocar)
       tarefaATrocar.favorito = !tarefaATrocar.favorito
       setTarefasFiltradas(copiaDasTarefas)
   }
